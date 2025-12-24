@@ -53,3 +53,16 @@ client.login(process.env.BOT_TOKEN).then(() => {
     setupStickyListeners(client);
     presenceModule(client);
 });
+// Sunucu oluşturma ve proje aktivitesi sağlama.
+const express = require('express');
+const app = express();
+const port = 3000;
+
+// Web sunucu
+app.get('/', (req, res) => {
+  res.sendStatus(200);
+});
+
+app.listen(port, () => {
+  console.log(`Sunucu ${port} numaralı bağlantı noktasında yürütülüyor.`);
+});
