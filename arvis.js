@@ -53,6 +53,7 @@ client.login(process.env.BOT_TOKEN).then(() => {
     setupStickyListeners(client);
     presenceModule(client);
 });
+
 // Sunucu oluşturma ve proje aktivitesi sağlama.
 const express = require('express');
 const app = express();
