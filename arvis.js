@@ -57,7 +57,7 @@ client.login(process.env.BOT_TOKEN).then(() => {
 // Sunucu oluşturma ve proje aktivitesi sağlama.
 const express = require('express');
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Web sunucu
 app.get('/', (req, res) => {
