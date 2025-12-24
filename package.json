@@ -3,6 +3,7 @@
   "version": "0.0.6",
   "description": "all-in-one_by_arviis.",
   "license": "ISC",
+  "express": "^4.18.2",
   "author": "arviis.",
   "type": "commonjs",
   "main": "arvis.js",
