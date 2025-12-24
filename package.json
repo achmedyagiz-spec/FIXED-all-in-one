@@ -7,7 +7,7 @@
   "type": "commonjs",
   "main": "arvis.js",
   "scripts": {
-    "test": "node arvis.js",
+    "start": "node arvis.js",
     "arviis:dev": "nodemon arvis.js"
   },
   "dependencies": {
