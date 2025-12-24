@@ -54,16 +54,18 @@ client.login(process.env.BOT_TOKEN).then(() => {
     presenceModule(client);
 });
 
-// Sunucu oluşturma ve proje aktivitesi sağlama.
 const express = require('express');
 const app = express();
+
+// Render veya lokal için port
 const PORT = process.env.PORT || 3000;
 
-// Web sunucu
+// Ana route (Render port kontrolü için gerekli)
 app.get('/', (req, res) => {
-  res.sendStatus(200);
+  res.status(200).send('Server aktif');
 });
 
-app.listen(port, () => {
-  console.log(`Sunucu ${port} numaralı bağlantı noktasında yürütülüyor.`);
+// Sunucuyu başlat
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server ${PORT} portunda aktif`);
 });
