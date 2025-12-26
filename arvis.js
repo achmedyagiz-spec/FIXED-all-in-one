@@ -58,7 +58,7 @@ const express = require('express');
 const app = express();
 
 // Render veya lokal için port
-const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT || 8080;
 
 // Ana route (Render port kontrolü için gerekli)
 app.get('/', (req, res) => {
